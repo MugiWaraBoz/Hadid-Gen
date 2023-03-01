@@ -1,0 +1,370 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* hadid generator*/
+
+.Hadid-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/3553692.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.container-1 {
+    width: 550px;
+}
+
+.header {
+    font-size: 1.2rem;
+    background-color: #262626;
+    color: #fff;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding: 10px 0 ;
+    margin: 25px auto;
+}
+
+.main-content {
+    background-color: white;
+    border-radius: 15px;
+    width: 100%;
+    height: 450px;
+    padding: 40px 50px;
+    box-shadow: 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hadid {
+    font-size: 1.6rem;
+}
+
+.referance {
+    font-size: 0.7rem;
+}
+
+.referance::before {
+    content: "-";
+}
+
+.narrated {
+    color: darkblue;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.button button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.button button:active {
+    background-color: lightblue;
+}
+
+.how-many {
+    position: absolute;
+    top: 93%;
+    left: 85%;
+    font-size: 13px;
+}
+
+/*About button*/
+
+#open-btn {
+    position: absolute;
+    top: 90%;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    box-shadow: 0 0 2px;
+    cursor: pointer;
+}
+
+#open-btn:hover {
+    background-color: white;
+}
+
+#about {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 3px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    font-size: 1.3rem;
+
+    animation-name: animatedabout;
+    animation-duration: .4s;
+}
+
+#close-btn {
+    position: absolute;
+    top: 1%;
+    right: 2.5%;
+    font-size: 1.5rem;
+    color: red;
+    cursor: pointer;
+
+}
+
+#about-container {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    width: 1500px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/* animation section for About */
+
+@keyframes animatedabout {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    
+    to {
+        top : 50%;
+        opacity: 1;
+    }
+}
+
+/* Q&A */
+
+.q-a-stopWatch {
+    background-image: url(images/wallpaperflare.com_wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-2 {
+    background-color: white;
+    width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.container-2 h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-2 .container-cotent {
+    text-align: left;
+}
+
+.container-2 .container-cotent .quesion {
+    font-size: 1.6rem;
+    border-bottom: solid 1px #262626;
+    padding: 18px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.container-2 .container-cotent .quesion::after {
+    content: '+';
+    position: absolute;
+    right: 0px; 
+    transition: 5s ease-in-out;
+}
+
+.container-2 .container-cotent .answer {
+    padding: 5px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 100%;
+
+    height: 0px;
+    overflow: hidden;
+
+    transition: .5s ease-in-out;
+}
+
+/* Q&A - Javascript styling */
+.container-2 .container-cotent.active .answer {
+    height: 130px;
+    transition: .5s ease-in-out;
+}
+
+.container-2 .container-cotent.active .quesion::after {
+    content: '-';
+    position: absolute;
+    right: 0px; 
+}
+
+/* StopWatch */
+
+.timer-container {
+    background-color: white;
+    margin: 2rem;
+    width: 385px;
+    height: 185px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#timer {
+    font-size: 3rem;
+    margin: 10px;
+}
+
+#startstopbtn, #resetbtn {
+    border: none;
+    background-color: blue;
+    color: white;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    filter: drop-shadow(1px 2px 2px #000);
+}
+
+#startstopbtn:active , #resetbtn:active {
+    background-color: darkblue;
+}
+
+#startstopbtn:hover , #resetbtn:hover {
+    opacity: 70%;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 0.7rem;
+    font-family: monospace;
+}
+
+/* ToDoList */
+#todoContainer {
+    background-image: url(images/gettyimages-155431320-2048x2048.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#add-task-container {
+    background-color: white;
+    width: 600px;
+    height: 200px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#add-task-container input {
+    background-color: wheat;
+    width: 300px;
+    height: 45px;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    font-family: monospace;]
+}
+
+#add-task-container button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: lightblue;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+#add-task-container button:hover {
+    background-color: lightgray
+}
+
+/* ToDoList-JavaScript */
+.task {
+    width: 600px;
+    height: 50px;
+    background-color: white;
+    margin: 10px;
+    padding: 0 10px;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task li {
+    list-style: none;
+    flex: 4;
+    text-align: left;
+}
+
+.task button {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: lightskyblue;
+    color: white;
+    border: none;
+}
+
+.task .checkButton:hover {
+    background-color: orange;
+}
+
+.task .trashButton:hover {
+    background-color: red;
+}
+
+.del {
+    text-decoration: line-through;
+}

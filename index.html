@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadid generator</title>
+    <!--StyleSheet-->
+    <link rel="stylesheet" href="styles.css">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/3a97aa5ed7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/3a97aa5ed7.css" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!--Hadid Generator!-->
+    <div class="Hadid-container">
+        <div class="container-1">
+            <div class="header">
+                <h2>Hadid Generator</h2>
+            </div>
+
+            <div class="main-content">
+                <span class="hadid">
+                    The Prophet (ﷺ) said, "A Muslim is the one who avoids harming Muslims with his tongue and hands. And
+                    a Muhajir (emigrant) is the one who gives up (abandons) all what Allah has forbidden."
+                </span><br>
+                <div class="referance">
+                    Sahih al-Bukhari 10
+                </div>
+                <div class="narrated">
+                    Narrated 'Abdullah bin 'Amr
+                </div>
+                <div class="button">
+                    <button id="next-hadid">Next Hadid</button>
+                </div>
+                <div class="how-many">
+                    Hadids : <span class="numbers">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--About this generator-->
+    <button id="open-btn">
+        <p>About the Generator</p>
+    </button>
+
+    <div id="about-container">
+        <div id="about">
+            <p>This Generator has been created by <strong>...</strong>.
+                <br>Every hadid was taken from <a href="http://sunnah.com/bukhari">Sunnah.com</a></p>
+            <div id="close-btn">&times;</div>
+        </div>
+    </div>
+
+    <!--Q&A and StopWatch-->
+    <div class="q-a-stopWatch">
+        <div class="container-2">
+            <h2>Frequently asked questions</h2>
+
+            <div class="container-cotent">
+                <div class="quesion">Where to read the all type of hadids?</div>
+                <div class="answer">
+                    There are lot of website you can read it from. here are some
+                    recommandation.
+                    <ol type="1">
+                        <li><a href="https://sunnah.com/">Sunnah</a></li>
+                        <li><a href="https://www.sahih-bukhari.com/">Saih-Bukhari</a></li>
+                    </ol>
+
+                </div>
+            </div>
+            <div class="container-cotent">
+                <div class="quesion">Where to read Quran online with Meaning?</div>
+                <div class="answer">
+                    <a href="https://quran.com/">Quran.com</a>
+                </div>
+            </div>
+            <div class="container-cotent">
+                <div class="quesion">Where to get answers for islamic questions?</div>
+                <div class="answer">
+                    <a href="https://islamqa.info/en">IslamInfo</a>
+                </div>
+            </div>
+        </div>
+        <div class="timer-container">
+            <div class="text">Hours : Minutes : Seconds</div>
+            <div id="timer">00:00:00</div>
+            <div id="buttons">
+                <button id="startstopbtn">
+                    <i class="fa-solid fa-play fa-xl" id="play"></i>
+                </button>
+                <button id="resetbtn">
+                    <i class="fa-solid fa-arrow-rotate-left fa-xl" id="reset"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--ToDoList-->
+    <div id="todoContainer">
+        <div id="add-task-container">
+            <input type="text" placeholder="Enter Task" id="input-task">
+            <button id="add-task"><i class="fa-solid fa-plus fa-xl"></i></button>
+        </div>
+
+        <div id="task-container"></div>
+    </div>
+
+    <!--Scripts-->
+    <script src="index.js"></script>
+
+</body>
+
+</html>
