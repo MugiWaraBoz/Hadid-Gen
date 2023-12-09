@@ -1,1 +1,3 @@
 # Hadid-Gen
+First website with JavaScript... 
+Check it out - https://mugiwaraboz.github.io/Hadid-Gen/
